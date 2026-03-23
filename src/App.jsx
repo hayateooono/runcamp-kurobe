@@ -46,9 +46,9 @@ const IMAGES = {
 
   // 参加者の声画像
   VOICES: [
-    '/voice-1.jpg',
-    '/voice-2.jpg',
-    '/voice-3.jpg',
+    '/voice-1.png',
+    '/voice-2.png',
+    '/voice-3.png',
   ],
 };
 
