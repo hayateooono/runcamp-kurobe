@@ -33,12 +33,12 @@ const IMAGES = {
   
   // プレビュー用の仮画像（5枚）
   HEROES: [
-    '/hero-1',
-    '/hero-2',
-    '/hero-3',
-    '/hero-4',
-    '/hero-5',
-    '/hero-6',
+    '/hero-1.jpg',
+    '/hero-2.jpg',
+    '/hero-3.jpg',
+    '/hero-4.jpg',
+    '/hero-5.jpg',
+    '/hero-6.jpg',
   ],
 
   // コーチ画像
