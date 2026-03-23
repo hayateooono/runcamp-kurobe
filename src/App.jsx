@@ -43,6 +43,13 @@ const IMAGES = {
   // コーチ画像
   COACH_HAYATE: '/coach-hayate.jpg',
   COACH_SENPUKU: '/coach-senpuku.jpg',
+
+  // 参加者の声画像
+  VOICES: [
+    '/voice-1.jpg',
+    '/voice-2.jpg',
+    '/voice-3.jpg',
+  ],
 };
 
 // 共通コンポーネント
@@ -545,42 +552,9 @@ export default function App() {
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
-            {voices.map((voice, i) => (
-              <div key={i} className="bg-white rounded-3xl p-8 shadow-sm border border-slate-200 relative mt-6 flex flex-col h-full hover:shadow-xl transition-shadow">
-                <div className="absolute -top-6 right-8 bg-blue-600 text-white font-black px-4 py-2 rounded-full text-sm shadow-lg flex items-center gap-1 transform rotate-3">
-                  <Trophy size={14} /> {voice.tag}
-                </div>
-                
-                <div className="flex text-yellow-400 mb-6 gap-1">
-                  {[...Array(voice.stars)].map((_, idx) => <Star key={idx} size={18} fill="currentColor" />)}
-                </div>
-
-                <div className="mb-6 bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                  <div className="flex items-center justify-between text-sm font-bold text-slate-500 mb-2">
-                    <span>Before</span>
-                    <span>After</span>
-                  </div>
-                  <div className="flex items-center justify-between font-en text-xl md:text-2xl">
-                    <span className="text-slate-600">{voice.timeBefore}</span>
-                    <ChevronRight className="text-blue-400" />
-                    <span className="text-blue-600 font-black">{voice.timeAfter}</span>
-                  </div>
-                  <div className="text-center mt-3 text-sm font-black text-red-500 bg-red-50 py-1 rounded-full">
-                    {voice.highlight}
-                  </div>
-                </div>
-
-                <p className="font-bold text-slate-700 text-sm leading-relaxed flex-grow">
-                  「{voice.comment}」
-                </p>
-                <div className="border-t border-slate-200 pt-6 mt-6 flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-slate-100 flex items-center justify-center border-2 border-white shadow-sm shrink-0 text-slate-400">
-                    <User size={24} />
-                  </div>
-                  <div>
-                    <p className="font-black text-sm text-slate-800">{voice.name}</p>
-                  </div>
-                </div>
+            {IMAGES.VOICES.map((imgSrc, i) => (
+              <div key={i} className="bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl transition-shadow flex items-start justify-center">
+                <img src={imgSrc} alt={`参加者の声 ${i + 1}`} className="w-full h-auto object-contain" />
               </div>
             ))}
           </div>
