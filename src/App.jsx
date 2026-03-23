@@ -152,7 +152,7 @@ export default function App() {
       title: "逃げ道のない、最高の「仲間の存在」",
       subtitle: "03. COMMUNITY",
       desc: "一人では心が折れそうな厳しい練習も、同じ目標に向かう仲間がいれば乗り越えられます。励まし合い、日々の成長を共有する濃密な時間は、まるで学生時代の合宿のような一生の財産になります。",
-      image: "/method-3.jpg",
+      image: "/method-3.JPG",
       colorClass: "bg-cyan-500 text-cyan-500"
     }
   ];
@@ -171,7 +171,7 @@ export default function App() {
     {
       step: "03", title: "走る＆EXで改善", icon: <Activity size={20}/>,
       desc: "フォーム改善EXで身体を整えながら実践。怪我を防ぎ、効率的に走力を積み上げます。",
-      image: "/story-3.jpg"
+      image: "/story-3.JPG"
     },
     {
       step: "04", title: "2人のコーチと通話", icon: <Video size={20}/>,
