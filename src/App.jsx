@@ -596,7 +596,7 @@ export default function App() {
                     </ul>
                   </div>
                   <div className="flex items-center gap-2 text-slate-500 font-bold text-sm mt-6">
-                    <MapPin size={16} /> 富山県総合運動公園 周辺
+                    <MapPin size={16} /> 城東公園 周辺
                   </div>
                 </div>
               </div>
@@ -623,7 +623,7 @@ export default function App() {
                     </ul>
                   </div>
                   <div className="flex items-center gap-2 text-slate-500 font-bold text-sm mt-6">
-                    <MapPin size={16} /> 富山県総合運動公園 周辺
+                    <MapPin size={16} /> 城東公園 周辺
                   </div>
                 </div>
               </div>
