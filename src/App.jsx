@@ -783,7 +783,6 @@ export default function App() {
                         <span className="text-4xl font-black font-en text-yellow-400 drop-shadow">¥9,900</span>
                         <span className="text-slate-400 text-sm font-bold mb-1">/月</span>
                       </div>
-                      <span className="text-xs font-bold text-yellow-500/80 mt-1">(2ヶ月総額 ¥19,800)</span>
                     </div>
                     <div className="h-16 flex items-end justify-center">
                       <Button onClick={() => window.open(APPLY_URL, '_blank')} className="w-full py-3 bg-gradient-to-r from-yellow-500 to-yellow-600 text-slate-900 hover:from-yellow-400 hover:to-yellow-500 shadow-xl shadow-yellow-500/20 border-none">申し込む</Button>
